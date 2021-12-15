@@ -1,6 +1,12 @@
 /* Importing font */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&display=swap');
 
+:root {
+    --main-font-color: #3a3a3a;
+    --letter-spacing: 4px;
+    --height-root: 600px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +16,7 @@
 body {
     font-family: Lato, sans-serif;
     font-weight: 300;
-    color: #3a3a3a
+    color: var(--main-font-color);
 }
 
 /* Headings & Logo */
@@ -19,7 +25,7 @@ h1,
 h2 {
     font-family: Oswald, sans-serif;
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: var(--letter-spacing);
     color: #252525;
 }
 
@@ -33,7 +39,7 @@ h2 {
 
 #menu {
     font-size: 110%;
-    letter-spacing: 4px;
+    letter-spacing: var(--letter-spacing);
 }
 
 #menu, #logo {
@@ -52,20 +58,20 @@ h2 {
 }
 
 #menu a:hover {
-    border-bottom: 1px solid #3a3a3a;
+    border-bottom: 1px solid var(--main-font-color);
 }
 
 #menu a:active {
-    border-bottom: 1px solid #3a3a3a;
+    border-bottom: 1px solid var(--main-font-color);
 }
 
 .active {
-    border-bottom: 1px solid #3a3a3a;
+    border-bottom: 1px solid var(--main-font-color);
 }
 
 /* Hero Image */
 #hero-outer {
-    height: 600px;
+    height: var(--height-root);
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -76,7 +82,7 @@ h2 {
 }
 
 #hero-image {
-    height: 600px;
+    height: var(--height-root);
     width: 100%;
     background: url("../images/hero-image.png") no-repeat center center;
 
@@ -100,7 +106,7 @@ h2 {
     font-size: 130%;
     font-family: Oswaöd, sans-serif;
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: var(--letter-spacing);
 
     width: 300px;
     height: 200px;
@@ -160,11 +166,7 @@ hr {
     margin-bottom: 50px;
 }
 
-.right-about-heading h2 {
-    text-align: right;
-}
-
-.right-about-heading p {
+.right-about-heading :is(h2,p) {
     text-align: right;
 }
 
