@@ -289,6 +289,12 @@ footer {
     hr {
         display: none;
     }
+
+    /* Gallery */
+
+    #photos {
+        column-count: 3;
+    }
 }
 
 /* Media Query screen max 950px */
@@ -325,4 +331,12 @@ footer {
         text-align: center;
         padding: 5px 20px;
     }
+
+    /* Gallery */
+    
+    #photos {
+        column-count: 2;
+    }
 }
+
+/* Media Query Gallery */
