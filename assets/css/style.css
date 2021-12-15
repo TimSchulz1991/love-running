@@ -333,10 +333,8 @@ footer {
     }
 
     /* Gallery */
-    
+
     #photos {
         column-count: 2;
     }
 }
-
-/* Media Query Gallery */
